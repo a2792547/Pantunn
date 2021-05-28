@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "1013526888705",
+    "project_id": "pantun-storage",
+    "storage_bucket": "pantun-storage.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013526888705:android:d9345518443ed9e2ba1b00",
+        "android_client_info": {
+          "package_name": "com.company.pantunn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013526888705-3n2p1950s7j9d144acq48fshk6e1a0v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpEu6quDaQjkiHL4X6yV-79UYCSaXHEVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013526888705-3n2p1950s7j9d144acq48fshk6e1a0v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013526888705:android:564e0fa1cfe6d3b9ba1b00",
+        "android_client_info": {
+          "package_name": "com.tunaskelapa.pantunn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013526888705-3n2p1950s7j9d144acq48fshk6e1a0v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpEu6quDaQjkiHL4X6yV-79UYCSaXHEVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013526888705-3n2p1950s7j9d144acq48fshk6e1a0v9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
