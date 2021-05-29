@@ -22,9 +22,10 @@
             android:padding="16dp">
 
             <TextView
+                android:id="@+id/tv_genre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="(Nasihat) (Jenaka) (Keluarga) (...)"
+                tools:text="Nasihat"
                 android:layout_marginBottom="4sp"
                 android:gravity="start"
                 android:textSize="16sp"
@@ -34,17 +35,11 @@
                 android:id="@+id/tv_pantun"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
                 android:ellipsize="end"
                 android:maxLines="1"
                 android:textSize="14sp"
                 tools:text="Berakit rakit kehulu Berenang renang ketepian Bersakit sakit dahulu Bersenang senang kemudian" />
-
-            <TextView
-                android:id="@+id/tv_tanggal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                tools:text="06/04/2021" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 

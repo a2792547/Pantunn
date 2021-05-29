@@ -2,4 +2,5 @@
     <string name="app_name">Pantunn</string>
     <string name="searchbar_text">Telusuri</string>
     <string name="button_text">Filter</string>
+    <string name="tv_pantun_item">%1$s %2$s %3$s %4$s</string>
 </resources>
