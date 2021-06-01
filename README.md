@@ -9,7 +9,7 @@ https://www.kaggle.com/donikusuma/pantun-indonesia
 
 1. Clone this repo
 2. Open the project folder using Android Studio
-3. Open [Google Firebase] (firebase.google.com), create the database and follow the instruction for installing to Android.
+3. Open [Google Firebase](firebase.google.com), create the database and follow the instruction for installing to Android.
 4. Run
 
 ## Contributing
