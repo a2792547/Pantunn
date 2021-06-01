@@ -10,7 +10,7 @@ Bangkit 2021 Capstone Broject By Tunas Kelapa Team, Pantun Classification.
 1. CAP-1    : https://colab.research.google.com/drive/1ZQK75MYDFONw4_mInqiC3cB2-VMDYnTx?usp=sharing
 2. CAP-2-1  : https://colab.research.google.com/drive/1E18jWw1YNuPZiCjnxK0sNar1Eq6ew9x8?usp=sharing
 3. CAP-2-2  : https://colab.research.google.com/drive/1fbtw7DAF1HUA40iHFZ31BW3-LR2qfez2?usp=sharing
-4. CAP-3    : 
+4. CAP-3    : https://colab.research.google.com/drive/1oRaPa3dUtV2VRp6ZQM0YZ1w-Z7RvHph-?usp=sharing
 
 ## Installation
 
