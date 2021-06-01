@@ -3,8 +3,8 @@
 Bangkit 2021 Capstone Broject By Tunas Kelapa Team, Pantun Classification.
 
 ## Dataset
-https://www.kaggle.com/donikusuma/pantun-indonesia
-https://www.kaggle.com/ilhamfp31/pantun-indonesia
+1. https://www.kaggle.com/donikusuma/pantun-indonesia
+2. https://www.kaggle.com/ilhamfp31/pantun-indonesia
 
 ## Google Colab [Deep Learning]
 1. CAP-1    : https://colab.research.google.com/drive/1ZQK75MYDFONw4_mInqiC3cB2-VMDYnTx?usp=sharing
