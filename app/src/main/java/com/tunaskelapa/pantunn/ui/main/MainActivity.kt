@@ -1,5 +1,6 @@
 package com.tunaskelapa.pantunn.ui.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.google.firebase.database.*
 import com.tunaskelapa.pantunn.data.DataPantun
 import com.tunaskelapa.pantunn.databinding.ActivityMainBinding
+import com.tunaskelapa.pantunn.ui.createPantun.CreatePantunActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding : ActivityMainBinding
@@ -29,6 +31,11 @@ class MainActivity : AppCompatActivity() {
         binding.rvMain.setHasFixedSize(true)
 
         getDatabase()
+
+        binding.imageButtonSearch.setOnClickListener {
+            val intent = Intent(it.context, CreatePantunActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun getDatabase() {

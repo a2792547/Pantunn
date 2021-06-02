@@ -3,4 +3,11 @@
     <string name="searchbar_text">Telusuri</string>
     <string name="button_text">Filter</string>
     <string name="tv_pantun_item">%1$s %2$s %3$s %4$s</string>
+    <string name="tv_pantun_details">%1$s\n%2$s\n%3$s\n%4$s</string>
+    <string name="search_btn_contentDesc">Cari</string>
+    <string name="bait1">a</string>
+    <string name="bait2">b</string>
+    <string name="bait3">a</string>
+    <string name="bait4">b</string>
+    <string name="pantun">Pantun</string>
 </resources>

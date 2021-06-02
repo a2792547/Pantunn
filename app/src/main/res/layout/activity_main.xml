@@ -12,9 +12,8 @@
         android:layout_height="40dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
-        android:layout_marginEnd="20dp"
+        android:layout_marginEnd="10dp"
         android:background="@drawable/bg_edt_searchbar_main"
-        android:drawableStart="@drawable/search_ico"
         android:drawablePadding="8dp"
         android:ems="10"
         android:hint="@string/searchbar_text"
@@ -23,7 +22,7 @@
         android:paddingStart="12dp"
         android:paddingEnd="4dp"
         android:shadowDy="1"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_search"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -31,6 +30,7 @@
         android:id="@+id/button_filter_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
         android:background="@android:color/transparent"
         android:text="@string/button_text"
         android:textColor="?android:attr/textColorPrimary"
@@ -39,7 +39,7 @@
         app:iconSize="15dp"
         app:iconTint="?android:attr/textColorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_searchbar_main" />
 
@@ -62,5 +62,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton_search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/bg_custom_search_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/search_ico"
+        android:contentDescription="@string/search_btn_contentDesc" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

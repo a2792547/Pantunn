@@ -2,12 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp">
-    
+    android:layout_marginRight="16dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,6 +16,7 @@
         app:cardElevation="4dp"
         app:cardMaxElevation="4dp"
         app:cardUseCompatPadding="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -25,19 +27,19 @@
                 android:id="@+id/tv_genre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="Nasihat"
                 android:layout_marginBottom="4sp"
                 android:gravity="start"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:text="Nasihat" />
 
             <TextView
                 android:id="@+id/tv_pantun"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingBottom="12dp"
                 android:ellipsize="end"
                 android:maxLines="1"
+                android:paddingBottom="12dp"
                 android:textSize="14sp"
                 tools:text="Berakit rakit kehulu Berenang renang ketepian Bersakit sakit dahulu Bersenang senang kemudian" />
         </LinearLayout>
