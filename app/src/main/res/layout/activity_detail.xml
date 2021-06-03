@@ -45,22 +45,107 @@
         app:layout_constraintTop_toTopOf="@id/result"/>
 
     <TextView
-        android:id="@+id/tv_pantun_detail"
-        android:layout_width="match_parent"
+        android:id="@+id/et_input1"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="12dp"
         android:background="@null"
         android:gravity="top"
+        android:hint="@string/bait1"
         android:importantForAutofill="no"
         android:includeFontPadding="false"
-        android:minHeight="100dp"
-        tools:text="@string/tv_pantun_details"
-        android:textSize="14sp"
-        android:lineSpacingExtra="8dp"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/bait1Indicator"
         app:layout_constraintTop_toBottomOf="@+id/result" />
+    <View
+        android:id="@+id/bait1Indicator"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_baiteven_indicator"
+        app:layout_constraintBottom_toBottomOf="@id/et_input1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_input1"/>
+
+    <TextView
+        android:id="@+id/et_input2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/bait2"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/bait2Indicator"
+        app:layout_constraintTop_toBottomOf="@+id/et_input1" />
+    <View
+        android:id="@+id/bait2Indicator"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_baitodd_indicator"
+        app:layout_constraintBottom_toBottomOf="@id/et_input2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_input2"/>
+
+    <TextView
+        android:id="@+id/et_input3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/bait3"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/bait3Indicator"
+        app:layout_constraintTop_toBottomOf="@+id/et_input2" />
+    <View
+        android:id="@+id/bait3Indicator"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_baiteven_indicator"
+        app:layout_constraintBottom_toBottomOf="@id/et_input3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_input3"/>
+
+    <TextView
+        android:id="@+id/et_input4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="12dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/bait4"
+        android:importantForAutofill="no"
+        android:includeFontPadding="false"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/bait4Indicator"
+        app:layout_constraintTop_toBottomOf="@+id/et_input3" />
+    <View
+        android:id="@+id/bait4Indicator"
+        android:layout_width="5dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/bg_baitodd_indicator"
+        app:layout_constraintBottom_toBottomOf="@id/et_input4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/et_input4"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.main.MainActivity">
 
-    <EditText
-        android:id="@+id/edt_searchbar_main"
-        android:layout_width="0dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/bg_edt_searchbar_main"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:hint="@string/searchbar_text"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:paddingStart="12dp"
-        android:paddingEnd="4dp"
-        android:shadowDy="1"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton_search"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button_filter_main"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:background="@android:color/transparent"
-        android:text="@string/button_text"
-        android:textColor="?android:attr/textColorPrimary"
-        android:textSize="12sp"
-        app:icon="@drawable/filter_ico"
-        app:iconSize="15dp"
-        app:iconTint="?android:attr/textColorPrimary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_searchbar_main" />
+<!--    <Button-->
+<!--        android:id="@+id/button_filter_main"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:background="@android:color/transparent"-->
+<!--        android:text="@string/button_text"-->
+<!--        android:textColor="?android:attr/textColorPrimary"-->
+<!--        android:textSize="12sp"-->
+<!--        app:icon="@drawable/filter_ico"-->
+<!--        app:iconSize="15dp"-->
+<!--        app:iconTint="?android:attr/textColorPrimary"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edt_searchbar_main" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_main"
@@ -49,8 +30,9 @@
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_filter_main"
+        app:layout_constraintTop_toBottomOf="@+id/edt_searchbar_main"
         tools:listitem="@layout/item" />
 
     <ProgressBar
@@ -63,18 +45,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton_search"
-        android:layout_width="40dp"
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_floatingAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:clickable="true"
+        android:contentDescription="@string/btn_floatAction"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_pencil" />
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/edt_searchbar_main"
+        android:layout_width="0dp"
         android:layout_height="40dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
-        android:background="@drawable/bg_custom_search_button"
+        android:background="@drawable/bg_edt_searchbar_main"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:shadowDy="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintHorizontal_bias="0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/search_ico"
-        android:contentDescription="@string/search_btn_contentDesc" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

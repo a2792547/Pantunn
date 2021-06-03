@@ -1,6 +1,7 @@
 package com.tunaskelapa.pantunn.ui.main
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -14,7 +15,9 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.ViewHolder>() {
     private val listPantun = ArrayList<DataPantun>()
     fun setData(items : ArrayList<DataPantun>) {
         listPantun.clear()
+        Log.d("ClearedListPantun", listPantun.toString())
         listPantun.addAll(items)
+        Log.d("AddedListPantun", listPantun.toString())
         notifyDataSetChanged()
     }
     class ViewHolder(private val binding: ItemBinding) : RecyclerView.ViewHolder(binding.root) {

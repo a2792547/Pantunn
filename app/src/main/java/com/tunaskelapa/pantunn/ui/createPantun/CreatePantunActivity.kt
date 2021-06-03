@@ -34,6 +34,12 @@ class CreatePantunActivity : AppCompatActivity() {
         })
 
         binding.btnAnalyze.setOnClickListener {
+            val bait1 = binding.etInput1.text.toString()
+                .lowercase(Locale.getDefault())
+                .trim()
+            val bait2 = binding.etInput2.text.toString()
+                .lowercase(Locale.getDefault())
+                .trim()
             val bait3 = binding.etInput3.text.toString()
                 .lowercase(Locale.getDefault())
                 .trim()
@@ -42,47 +48,37 @@ class CreatePantunActivity : AppCompatActivity() {
                 .trim()
 
             val message = bait3+bait4
-            Log.d("message", message)
-            if ( !TextUtils.isEmpty( message ) ){
-                // Tokenize and pad the given input text.
-                val tokenizedMessage = classifier.tokenize( message )
-                val paddedMessage = classifier.padSequence( tokenizedMessage )
+            val entry = bait1+bait2+bait3+bait4
+            when {
+                (TextUtils.isEmpty(entry)) -> Toast.makeText( this, "Pantun tidak boleh kosong.", Toast.LENGTH_LONG).show()
+                (bait1 == "") -> Toast.makeText( this, "Bait pertama tidak boleh kosong.", Toast.LENGTH_LONG).show()
+                (bait2 == "") -> Toast.makeText( this, "Bait kedua tidak boleh kosong.", Toast.LENGTH_LONG).show()
+                (bait3 == "") -> Toast.makeText( this, "Bait ketiga tidak boleh kosong.", Toast.LENGTH_LONG).show()
+                (bait4 == "") -> Toast.makeText( this, "Bait keempat tidak boleh kosong.", Toast.LENGTH_LONG).show()
+                (!TextUtils.isEmpty(entry)) -> {
+                    val tokenizedMessage = classifier.tokenize( message )
+                    val paddedMessage = classifier.padSequence( tokenizedMessage )
+                    val results = classifySequence( paddedMessage )
+                    val result = mapOf(
+                        "${results[0]}" to "Pantun Adat dan Alam",
+                        "${results[1]}" to "Pantun Agama",
+                        "${results[2]}" to "Pantun Anak-anak",
+                        "${results[3]}" to "Pantun Budi",
+                        "${results[4]}" to "Pantun Cinta",
+                        "${results[5]}" to "Pantun Jenaka",
+                        "${results[6]}" to "Pantun Nasihat",
+                        "${results[7]}" to "Pantun Orangtua",
+                        "${results[8]}" to "Pantun Pendidikan",
+                        "${results[9]}" to "Pantun Teka-Teki"
+                    )
 
-                val results = classifySequence( paddedMessage )
-                val class1 = results[0]
-                val class2 = results[1]
-                val class3 = results[2]
-                val class4 = results[3]
-                val class5 = results[4]
-                val class6 = results[5]
-                val class7 = results[6]
-                val class8 = results[7]
-                val class9 = results[8]
-                val class10 = results[9]
-
-                val result = mapOf(
-                    "$class1" to "Pantun Adat dan Alam",
-                    "$class2" to "Pantun Agama",
-                    "$class3" to "Pantun Anak-anak",
-                    "$class4" to "Pantun Budi",
-                    "$class5" to "Pantun Cinta",
-                    "$class6" to "Pantun Jenaka",
-                    "$class7" to "Pantun Nasihat",
-                    "$class8" to "Pantun Orangtua",
-                    "$class9" to "Pantun Pendidikan",
-                    "$class10" to "Pantun Teka-Teki"
-                )
-
-                val hasil = listOf(class1, class2, class3, class4, class5, class6,
-                    class7, class8, class9, class10)
-                val max = hasil.maxOrNull() ?: 0
-                Log.d("Result", max.toString())
-                val theResult = result["$max"]
-                binding.result.text = theResult
-
-            }
-            else{
-                Toast.makeText( this, "Pantun tidak boleh kosong.", Toast.LENGTH_LONG).show()
+                    val hasil = listOf(results[0], results[1], results[2], results[3], results[4], results[5],
+                        results[6], results[7], results[8], results[9])
+                    val max = hasil.maxOrNull() ?: 0
+                    Log.d("Result", max.toString())
+                    val theResult = result["$max"]
+                    binding.result.text = theResult
+                }
             }
         }
     }

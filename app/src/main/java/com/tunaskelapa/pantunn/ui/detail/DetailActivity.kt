@@ -2,7 +2,6 @@ package com.tunaskelapa.pantunn.ui.detail
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.tunaskelapa.pantunn.R
 import com.tunaskelapa.pantunn.data.DataParcel
 import com.tunaskelapa.pantunn.databinding.ActivityDetailBinding
 
@@ -20,7 +19,9 @@ class DetailActivity : AppCompatActivity() {
 
         val pantun = intent.getParcelableExtra<DataParcel>(EXTRA_PANTUN) as DataParcel
         binding.result.text = pantun.genre
-        binding.tvPantunDetail.text = getString(R.string.tv_pantun_details, pantun.bait1, pantun.bait2, pantun.bait3, pantun.bait4)
-
+        binding.etInput1.text = pantun.bait1
+        binding.etInput2.text = pantun.bait2
+        binding.etInput3.text = pantun.bait3
+        binding.etInput4.text = pantun.bait4
     }
 }
