@@ -81,6 +81,9 @@ class CreatePantunActivity : AppCompatActivity() {
                 }
             }
         }
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
     }
 
     private fun classifySequence(sequence: IntArray): FloatArray {

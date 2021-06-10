@@ -23,5 +23,9 @@ class DetailActivity : AppCompatActivity() {
         binding.etInput2.text = pantun.bait2
         binding.etInput3.text = pantun.bait3
         binding.etInput4.text = pantun.bait4
+
+        binding.arrowBack.setOnClickListener {
+            finish()
+        }
     }
 }
